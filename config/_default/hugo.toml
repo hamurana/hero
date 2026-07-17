@@ -3,9 +3,10 @@
 # https://blowfish.page/docs/getting-started/
 
 theme = "blowfish"
-# Must match the GitHub Pages URL (the deploy workflow overrides it at build
-# time anyway, but keep it correct for local production builds).
-baseURL = "https://hamurana.github.io/hero/"
+# Must match the live URL — the custom domain set in the repo's Pages settings
+# (the deploy workflow overrides it at build time anyway, but keep it correct
+# for local production builds).
+baseURL = "https://ncw.co.nz/"
 defaultContentLanguage = "en"
 
 # pluralizeListTitles = "true" # hugo function useful for non-english languages, find out more in  https://gohugo.io/getting-started/configuration/#pluralizelisttitles
