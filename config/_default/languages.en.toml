@@ -1,0 +1,43 @@
+# ============================================================================
+# languages.en.toml — SITE IDENTITY & AUTHOR PROFILE (per language)
+# ----------------------------------------------------------------------------
+# Controls the site title shown in the header/browser tab, and the author
+# block that the "profile" homepage layout and article bylines display.
+# For a multilingual site, copy this file to languages.<code>.toml.
+#
+# Docs: https://blowfish.page/docs/configuration/#language-and-i18n
+# ============================================================================
+
+locale = "en"
+label = "English"
+weight = 1
+
+# Site title — appears in the header, browser tab, and the footer copyright.
+title = "Hero"
+
+[params]
+  # Optional site-wide meta description for search engines.
+  description = "A personal site built with Hugo and the Blowfish theme."
+
+  # Text or logo shown in the top-left of the header. To use a logo image
+  # instead of the site title, put it in assets/ and set:
+  #[params.logo]
+  #  imageFilename = "img/logo.png"
+
+# ---- Author profile ---------------------------------------------------------
+# Shown on the homepage (when homepage.layout = "profile" in params.toml)
+# and next to articles when article.showAuthor = true.
+[params.author]
+  name = "Neo Wang"
+  # Avatar image: place the file in assets/ (e.g. assets/img/avatar.jpg)
+  # and reference it relative to assets/.
+  #image = "img/avatar.jpg"
+  headline = "Welcome to my corner of the web"
+  bio = "Writing about things I build and learn."
+
+  # Icon links displayed under the profile. Each entry is one icon.
+  # Available icon names: https://blowfish.page/samples/icons/
+  links = [
+    { github = "https://github.com/hamurana" },
+    { email = "mailto:neo.wang@me.com" },
+  ]

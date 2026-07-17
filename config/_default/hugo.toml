@@ -1,0 +1,80 @@
+# ============================================================================
+# hugo.toml — CORE SITE CONFIGURATION
+# ----------------------------------------------------------------------------
+# This file controls Hugo itself (the build engine), not the theme's visuals.
+# Look-and-feel options live mostly in params.toml (theme behaviour/UI) and
+# languages.en.toml (site title, author profile shown on the homepage).
+#
+# Docs: https://blowfish.page/docs/getting-started/
+# ============================================================================
+
+# The public URL of the deployed site. MUST match your GitHub Pages URL,
+# including the trailing slash, or CSS/JS/image links will break.
+# For a project page it is: https://<username>.github.io/<repo>/
+baseURL = "https://hamurana.github.io/hero/"
+
+# Activates the Blowfish theme (installed as a git submodule in themes/blowfish).
+theme = "blowfish"
+
+defaultContentLanguage = "en"
+
+# Generate robots.txt so search engines know what to crawl.
+enableRobotsTXT = true
+
+# 0 = let Blowfish decide summary length on list pages.
+summaryLength = 0
+
+# Drafts and future-dated posts are excluded from production builds.
+buildDrafts = false
+buildFuture = false
+
+# Allow :emoji_shortcodes: in Markdown content.
+enableEmoji = true
+
+[pagination]
+  # How many articles are listed per page before "next page" appears.
+  pagerSize = 10
+
+[imaging]
+  # Where images are cropped from when the theme resizes them (thumbnails etc.).
+  anchor = "Center"
+
+# Content classification. Each taxonomy gets its own browsable pages
+# (/tags/, /categories/, ...) and badges on articles when enabled in params.toml.
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  author = "authors"
+  series = "series"
+
+[sitemap]
+  changefreq = "daily"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[outputs]
+  # JSON output on the homepage powers Blowfish's built-in site search —
+  # removing "JSON" here silently breaks the search button in the header.
+  home = ["HTML", "RSS", "JSON"]
+
+# Controls the "Related content" suggestions under articles
+# (shown only if article.showRelatedContent = true in params.toml).
+[related]
+  threshold = 0
+  toLower = false
+
+  [[related.indices]]
+    name = "tags"
+    weight = 100
+
+  [[related.indices]]
+    name = "categories"
+    weight = 100
+
+  [[related.indices]]
+    name = "series"
+    weight = 50
+
+  [[related.indices]]
+    name = "date"
+    weight = 10

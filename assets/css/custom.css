@@ -1,0 +1,16 @@
+/* ===========================================================================
+ * custom.css — YOUR CSS OVERRIDES
+ * ---------------------------------------------------------------------------
+ * Blowfish automatically loads this file AFTER its own styles, so anything
+ * here wins. Use it for tweaks the TOML options don't cover.
+ *
+ * The theme is built on Tailwind CSS and exposes its palette as CSS custom
+ * properties. To retint the whole site without writing a full colour scheme,
+ * override the neutral/primary variables, e.g.:
+ *
+ *   :root {
+ *     --color-primary-600: 79 70 229;   /* RGB channels, space-separated *\/
+ *   }
+ *
+ * Full list of variables: themes/blowfish/assets/css/schemes/blowfish.css
+ * =========================================================================== */

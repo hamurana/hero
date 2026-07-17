@@ -1,0 +1,142 @@
+# ============================================================================
+# params.toml — THE MAIN LOOK-AND-FEEL FILE ⭐
+# ----------------------------------------------------------------------------
+# Almost everything you see on the rendered site is controlled from here:
+# colours, light/dark mode, header/footer style, homepage layout, and which
+# metadata (dates, reading time, tags...) appears on articles and lists.
+#
+# Full reference for every option:
+# https://blowfish.page/docs/configuration/#theme-parameters
+# ============================================================================
+
+# ---- Colour & appearance ---------------------------------------------------
+
+# The theme's colour palette. Built-in schemes:
+#   blowfish, avocado, fire, forest, princess, neon, bloody, terminal,
+#   marvel, noir, autumn, congo, slate, ocean
+# You can also create your own: add assets/css/schemes/<name>.css and use
+# that <name> here.
+colorScheme = "blowfish"
+
+# Appearance when a visitor first arrives: "light" or "dark".
+defaultAppearance = "light"
+
+# If true, follow the visitor's OS light/dark preference automatically.
+# The footer switcher (footer.showAppearanceSwitcher below) still lets
+# them override it manually.
+autoSwitchAppearance = true
+
+# ---- Global feature toggles ------------------------------------------------
+
+enableA11y = true          # extra accessibility helpers (skip links etc.)
+enableSearch = true        # magnifying-glass search button in the header
+enableCodeCopy = true      # "copy" button on code blocks (needs markup.toml
+                           #  highlight.noClasses = false to style correctly)
+
+# Image handling. Disabling optimization serves originals (bigger downloads).
+disableImageOptimization = false
+
+# Table of contents follows the reading position and highlights the
+# current section.
+smartTOC = true
+
+# ---- Header ----------------------------------------------------------------
+
+[header]
+  # Visual style of the top navigation bar. Valid options:
+  #   basic              - scrolls away with the page
+  #   fixed              - sticks to the top while scrolling
+  #   fixed-fill         - sticky, with a solid background colour
+  #   fixed-gradient     - sticky, with a gradient background
+  #   fixed-fill-blur    - sticky, blurred translucent background (iOS-style)
+  layout = "fixed"
+
+# ---- Footer ----------------------------------------------------------------
+
+[footer]
+  showMenu = true               # show the footer menu (defined in menus.en.toml)
+  showCopyright = true          # © line with the site title
+  showThemeAttribution = true   # "Powered by Hugo & Blowfish" credit
+  showAppearanceSwitcher = true # the light/dark toggle button
+  showScrollToTop = true        # the "back to top" arrow
+
+# ---- Homepage --------------------------------------------------------------
+
+[homepage]
+  # The overall design of the landing page. Valid options:
+  #   page       - plain page rendering of content/_index.md
+  #   profile    - centred author image, name and social links (personal site)
+  #   hero       - big hero image with title overlaid
+  #   card       - content beside an image card
+  #   background - fullscreen background image
+  #   custom     - your own layouts/partials/home/custom.html
+  layout = "profile"
+
+  # Image used by the "hero", "card" and "background" layouts.
+  # Put the file in assets/ and reference it here.
+  #homepageImage = "img/home.jpg"
+
+  showRecent = true        # list recent articles under the profile/hero
+  showRecentItems = 5      # how many recent articles to show
+  showMoreLink = true      # "More →" link at the end of the recent list
+  showMoreLinkDest = "/posts/"
+  cardView = false         # true = recent articles as cards instead of rows
+
+# ---- Article pages (single posts) -----------------------------------------
+
+[article]
+  showDate = true           # publish date under the title
+  showDateUpdated = false   # also show "updated" date
+  showAuthor = true         # author byline (profile from languages.en.toml)
+  showReadingTime = true    # "5 min read" estimate
+  showWordCount = false     # word count next to reading time
+  showBreadcrumbs = true    # Home > Posts > Title trail above the heading
+  showHeadingAnchors = true # clickable ¶ links on section headings
+  showPagination = true     # next/previous article links at the bottom
+  invertPagination = false
+  showTableOfContents = true # per-article TOC (headings sidebar)
+  showZenMode = true         # distraction-free reading toggle on articles
+
+  # Hero banner at the top of an article (uses the article's featured image).
+  showHero = true
+  # Valid options: basic, big, background, thumbAndBackground
+  heroStyle = "basic"
+
+  showDraftLabel = true      # "DRAFT" badge when serving with -D locally
+
+  # Taxonomy badges (tags/categories) shown with the article metadata.
+  showTaxonomies = true
+
+  # Social sharing buttons at the end of each article. Uncomment to enable:
+  #sharingLinks = ["linkedin", "twitter", "bluesky", "mastodon", "reddit", "email"]
+
+  # "Edit this page" link pointing at the repo. Uncomment to enable:
+  #showEdit = true
+  #editURL = "https://github.com/hamurana/hero/tree/main/content/"
+  #editAppendPath = true
+
+# ---- List pages (/posts/, section indexes) ---------------------------------
+
+[list]
+  showHero = false          # hero banner on list pages
+  showBreadcrumbs = true
+  showSummary = true        # article summary under each list entry
+  showTableOfContents = false
+  groupByYear = true        # group the article list under year headings
+  cardView = false          # true = render entries as cards
+  cardViewScreenWidth = false # cards stretch to full screen width
+
+# ---- Taxonomy pages (/tags/, /categories/) ---------------------------------
+
+[taxonomy]
+  showTermCount = true      # show how many articles each tag/category has
+  cardView = false
+
+[term]
+  showBreadcrumbs = true
+  showTableOfContents = false
+  groupByYear = false
+  cardView = false
+
+[sitemap]
+  excludedKinds = ["taxonomy", "term"]
