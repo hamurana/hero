@@ -1,24 +1,26 @@
-# ============================================================================
-# markup.toml — MARKDOWN RENDERING & CODE HIGHLIGHTING
-# ----------------------------------------------------------------------------
-# Controls how your Markdown content is converted to HTML: raw-HTML handling,
-# syntax-highlighted code blocks, and table-of-contents depth.
-# ============================================================================
+# -- Markup --
+# These settings are required for the theme to function.
 
 [goldmark]
+  [goldmark.parser]
+    wrapStandAloneImageWithinParagraph = false
+
+    [goldmark.parser.attribute]
+      block = true
+
   [goldmark.renderer]
-    # Allow raw HTML inside Markdown files. Blowfish's shortcodes and many
-    # of its features rely on this — keep it true.
     unsafe = true
 
+  [goldmark.extensions]
+    [goldmark.extensions.passthrough]
+      enable = true
+      [goldmark.extensions.passthrough.delimiters]
+        block = [['\[', '\]'], ['$$', '$$']]
+        inline = [['\(', '\)']]
+
 [highlight]
-  # false = emit CSS classes instead of inline styles, so code blocks are
-  # coloured by the theme's own palette and adapt to light/dark mode.
-  # REQUIRED for Blowfish's code styling and the enableCodeCopy button.
   noClasses = false
 
 [tableOfContents]
-  # Which heading levels appear in the table of contents
-  # (h2 through h4 by default).
   startLevel = 2
   endLevel = 4

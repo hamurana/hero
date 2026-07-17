@@ -1,142 +1,189 @@
-# ============================================================================
-# params.toml — THE MAIN LOOK-AND-FEEL FILE ⭐
-# ----------------------------------------------------------------------------
-# Almost everything you see on the rendered site is controlled from here:
-# colours, light/dark mode, header/footer style, homepage layout, and which
-# metadata (dates, reading time, tags...) appears on articles and lists.
+# -- Theme Options --
+# These options control how the theme functions and allow you to
+# customise the display of your website.
 #
-# Full reference for every option:
+# Refer to the theme docs for more details about each of these parameters.
 # https://blowfish.page/docs/configuration/#theme-parameters
-# ============================================================================
 
-# ---- Colour & appearance ---------------------------------------------------
-
-# The theme's colour palette. Built-in schemes:
-#   blowfish, avocado, fire, forest, princess, neon, bloody, terminal,
-#   marvel, noir, autumn, congo, slate, ocean
-# You can also create your own: add assets/css/schemes/<name>.css and use
-# that <name> here.
 colorScheme = "blowfish"
-
-# Appearance when a visitor first arrives: "light" or "dark".
-defaultAppearance = "light"
-
-# If true, follow the visitor's OS light/dark preference automatically.
-# The footer switcher (footer.showAppearanceSwitcher below) still lets
-# them override it manually.
+defaultAppearance = "dark" # valid options: light or dark
 autoSwitchAppearance = true
 
-# ---- Global feature toggles ------------------------------------------------
+enableA11y = false
+enableSearch = true
+enableCodeCopy = true
+enableStructuredBreadcrumbs = true
 
-enableA11y = true          # extra accessibility helpers (skip links etc.)
-enableSearch = true        # magnifying-glass search button in the header
-enableCodeCopy = true      # "copy" button on code blocks (needs markup.toml
-                           #  highlight.noClasses = false to style correctly)
+replyByEmail = false
 
-# Image handling. Disabling optimization serves originals (bigger downloads).
+mainSections = ["posts"] # sections whose articles feed "recent" lists on the homepage
+# robots = ""
+
 disableImageOptimization = false
+disableImageOptimizationMD = false
+disableTextInHeader = false
+# backgroundImageWidth = 1200
 
-# Table of contents follows the reading position and highlights the
-# current section.
+defaultBackgroundImage = "/img/background.svg"
+defaultFeaturedImage = "/img/featured.svg"
+defaultSocialImage = "/img/blowfish_banner.png"
+hotlinkFeatureImage = false
+# imagePosition = "50% 50%"
+
+highlightCurrentMenuArea = true
 smartTOC = true
+smartTOCHideUnfocusedChildren = false
 
-# ---- Header ----------------------------------------------------------------
+#giteaDefaultServer = "https://git.fsfe.org"
+#forgejoDefaultServer = "https://v11.next.forgejo.org"
+
+fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384", "sha256"
 
 [header]
-  # Visual style of the top navigation bar. Valid options:
-  #   basic              - scrolls away with the page
-  #   fixed              - sticks to the top while scrolling
-  #   fixed-fill         - sticky, with a solid background colour
-  #   fixed-gradient     - sticky, with a gradient background
-  #   fixed-fill-blur    - sticky, blurred translucent background (iOS-style)
-  layout = "fixed"
-
-# ---- Footer ----------------------------------------------------------------
+  layout = "fixed" # valid options: basic, fixed, fixed-fill, fixed-gradient, fixed-fill-blur
 
 [footer]
-  showMenu = true               # show the footer menu (defined in menus.en.toml)
-  showCopyright = true          # © line with the site title
-  showThemeAttribution = true   # "Powered by Hugo & Blowfish" credit
-  showAppearanceSwitcher = true # the light/dark toggle button
-  showScrollToTop = true        # the "back to top" arrow
-
-# ---- Homepage --------------------------------------------------------------
+  showMenu = true
+  showCopyright = true
+  showThemeAttribution = true
+  showAppearanceSwitcher = true
+  showScrollToTop = true
 
 [homepage]
-  # The overall design of the landing page. Valid options:
-  #   page       - plain page rendering of content/_index.md
-  #   profile    - centred author image, name and social links (personal site)
-  #   hero       - big hero image with title overlaid
-  #   card       - content beside an image card
-  #   background - fullscreen background image
-  #   custom     - your own layouts/partials/home/custom.html
-  layout = "profile"
-
-  # Image used by the "hero", "card" and "background" layouts.
-  # Put the file in assets/ and reference it here.
-  #homepageImage = "img/home.jpg"
-
-  showRecent = true        # list recent articles under the profile/hero
-  showRecentItems = 5      # how many recent articles to show
-  showMoreLink = true      # "More →" link at the end of the recent list
+  # "background" is the layout blowfish.page's homepage demo shows first:
+  # fullscreen animated background (defaultBackgroundImage above) with your
+  # profile overlaid, recent posts below. (blowfish.page itself uses "custom"
+  # only to add its layout-switcher demo and sponsor sections.)
+  layout = "background" # valid options: page, profile, hero, card, background, custom
+  # homepageImage = "/img/iceland.jpg" # used in: hero, and card
+  showRecent = true
+  showRecentItems = 6
+  showMoreLink = true
   showMoreLinkDest = "/posts/"
-  cardView = false         # true = recent articles as cards instead of rows
-
-# ---- Article pages (single posts) -----------------------------------------
+  cardView = true
+  cardViewScreenWidth = false
+  layoutBackgroundBlur = true # only used when layout equals background
+  disableHeroImageFilter = false # only used when layout equals hero
 
 [article]
-  showDate = true           # publish date under the title
-  showDateUpdated = false   # also show "updated" date
-  showAuthor = true         # author byline (profile from languages.en.toml)
-  showReadingTime = true    # "5 min read" estimate
-  showWordCount = false     # word count next to reading time
-  showBreadcrumbs = true    # Home > Posts > Title trail above the heading
-  showHeadingAnchors = true # clickable ¶ links on section headings
-  showPagination = true     # next/previous article links at the bottom
-  invertPagination = false
-  showTableOfContents = true # per-article TOC (headings sidebar)
-  showZenMode = true         # distraction-free reading toggle on articles
-
-  # Hero banner at the top of an article (uses the article's featured image).
+  showDate = true # blowfish.page hides dates (docs site); a blog wants them
+  showViews = false # blowfish.page has true, but it needs your own [firebase] config below
+  showLikes = false
+  showDateOnlyInArticle = false
+  showDateUpdated = false
+  showAuthor = true
+  # showAuthorBottom = false
   showHero = true
-  # Valid options: basic, big, background, thumbAndBackground
-  heroStyle = "basic"
-
-  showDraftLabel = true      # "DRAFT" badge when serving with -D locally
-
-  # Taxonomy badges (tags/categories) shown with the article metadata.
+  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  layoutBackgroundBlur = true # only used when heroStyle equals background
+  layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
+  showBreadcrumbs = true
+  showDraftLabel = true
+  showEdit = true
+  editURL = "https://github.com/hamurana/hero/tree/main/content" # "Edit" links on articles point at your repo
+  editAppendPath = true
+  seriesOpened = false
+  showHeadingAnchors = true
+  showPagination = true
+  invertPagination = false
+  showReadingTime = true
+  showTableOfContents = true
+  showRelatedContent = true
+  relatedContentLimit = 9
   showTaxonomies = true
-
-  # Social sharing buttons at the end of each article. Uncomment to enable:
-  #sharingLinks = ["linkedin", "twitter", "bluesky", "mastodon", "reddit", "email"]
-
-  # "Edit this page" link pointing at the repo. Uncomment to enable:
-  #showEdit = true
-  #editURL = "https://github.com/hamurana/hero/tree/main/content/"
-  #editAppendPath = true
-
-# ---- List pages (/posts/, section indexes) ---------------------------------
+  showAuthorsBadges = false # needs data/authors/*.json profiles to be useful
+  showWordCount = false
+  sharingLinks = [ "linkedin", "twitter", "bluesky", "reddit", "whatsapp", "telegram", "pinterest", "facebook", "email", "line"]
+  showZenMode = true
 
 [list]
-  showHero = false          # hero banner on list pages
-  showBreadcrumbs = true
-  showSummary = true        # article summary under each list entry
-  showTableOfContents = false
-  groupByYear = true        # group the article list under year headings
-  cardView = false          # true = render entries as cards
-  cardViewScreenWidth = false # cards stretch to full screen width
+  showHero = true
+  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  layoutBackgroundBlur = true # only used when heroStyle equals background
+  layoutBackgroundHeaderSpace = false
+  showBreadcrumbs = false
+  showSummary = false
+  showViews = false
+  showLikes = false
+  showTableOfContents = true
+  showCards = true
+  orderByWeight = false # docs order by weight; a blog orders by date
+  groupByYear = true
+  cardView = true
+  cardViewScreenWidth = false
+  constrainItemsWidth = false
 
-# ---- Taxonomy pages (/tags/, /categories/) ---------------------------------
+[sitemap]
+  excludedKinds = []
 
 [taxonomy]
-  showTermCount = true      # show how many articles each tag/category has
+  showTermCount = true
+  showHero = true
+  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  showBreadcrumbs = false
+  showViews = false
+  showLikes = false
+  showTableOfContents = true
   cardView = false
 
 [term]
-  showBreadcrumbs = true
-  showTableOfContents = false
+  showHero = true
+  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  showBreadcrumbs = false
+  showViews = false
+  showLikes = false
+  showTableOfContents = true
   groupByYear = false
-  cardView = false
+  cardView = true
+  cardViewScreenWidth = false
 
-[sitemap]
-  excludedKinds = ["taxonomy", "term"]
+# Firebase powers the view/like counters on blowfish.page. The exampleSite
+# values belong to the Blowfish project's own Firebase account, so they are
+# removed here. To get counters, create your own (free) Firebase project and
+# fill these in: https://blowfish.page/docs/firebase-views/
+[firebase]
+  # apiKey = ""
+  # authDomain = ""
+  # projectId = ""
+  # storageBucket = ""
+  # messagingSenderId = ""
+  # appId = ""
+  # measurementId = ""
+
+[fathomAnalytics]
+  # site = "ABC12345"
+  # domain = "llama.yoursite.com"
+
+[umamiAnalytics]
+  # websiteid = "ABC12345"
+  # domain = "llama.yoursite.com"
+  # dataDomains = "yoursite.com,yoursite2.com"
+  # scriptName = ""
+  # enableTrackEvent = false
+
+[selineAnalytics]
+  # token = "XXXXXX"
+  # enableTrackEvent = false
+
+# blowfish.page shows a floating yellow "Buy me a coffee" widget here. It was
+# tied to the theme author's account, so it's disabled — put your own
+# identifier in and set globalWidget = true if you want the same widget.
+[buymeacoffee]
+  # identifier = ""
+  globalWidget = false
+  globalWidgetMessage = ""
+  globalWidgetColor = "#FFDD00"
+  globalWidgetPosition = "right"
+
+[verification]
+  # google = ""
+  # bing = ""
+  # pinterest = ""
+  # yandex = ""
+
+[rssnext]
+  # feedId = ""
+  # userId = ""
+
+[advertisement]
+  # adsense = ""
