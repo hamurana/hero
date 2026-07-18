@@ -14,19 +14,9 @@
   pageRef = "about"
   weight = 20
 
-[[main]]
-  name = "Tags"
-  pageRef = "tags"
-  weight = 30
-
 # Icon-only link in the header, like blowfish.page's GitHub icon.
 [[main]]
   identifier = "github"
   pre = "github"
   url = "https://github.com/hamurana/hero"
   weight = 100
-
-[[footer]]
-  name = "Tags"
-  pageRef = "tags"
-  weight = 10

@@ -3,7 +3,6 @@ title: "Welcome to Hero"
 date: 2026-07-17
 description: "A first post showing the front matter options that shape how an article looks."
 summary: "How this site is put together, and where to change how it looks."
-tags: ["hugo", "blowfish"]
 categories: ["meta"]
 ---
 
