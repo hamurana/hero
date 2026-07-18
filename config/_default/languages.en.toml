@@ -10,7 +10,7 @@ label = "English"
 weight = 1
 
 # Site title — header, browser tab, footer copyright.
-title = "Hero"
+title = "NCW"
 
 [params]
   displayName = "English"
