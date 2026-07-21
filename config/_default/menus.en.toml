@@ -15,8 +15,8 @@
   weight = 20
 
 # Icon-only link in the header, like blowfish.page's GitHub icon.
-[[main]]
-  identifier = "github"
-  pre = "github"
-  url = "https://github.com/hamurana/hero"
-  weight = 100
+# [[main]]
+#   identifier = "github"
+#   pre = "github"
+#   url = "https://github.com/hamurana/hero"
+#   weight = 100
