@@ -1,4 +1,4 @@
 ---
-title: "Health"
+title: "Investment"
 description: "All articles"
 ---

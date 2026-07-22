@@ -5,14 +5,34 @@
 # ============================================================================
 
 [[main]]
-  name = "Posts"
-  pageRef = "posts"
+  name = "Health"
+  pageRef = "health"
   weight = 10
+
+[[main]]
+  name = "Investment"
+  pageRef = "investment"
+  weight = 20
+
+[[main]]
+  name = "Style"
+  pageRef = "style"
+  weight = 30
+
+[[main]]
+  name = "Charisma"
+  pageRef = "charisma"
+  weight = 40
+
+[[main]]
+  name = "Habit"
+  pageRef = "habit"
+  weight = 50
 
 [[main]]
   name = "About"
   pageRef = "about"
-  weight = 20
+  weight = 60
 
 # Icon-only link in the header, like blowfish.page's GitHub icon.
 # [[main]]

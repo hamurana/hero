@@ -1,4 +1,4 @@
 ---
-title: "Health"
+title: "Habit"
 description: "All articles"
 ---

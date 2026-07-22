@@ -1,4 +1,4 @@
 ---
-title: "Health"
+title: "Charisma"
 description: "All articles"
 ---
