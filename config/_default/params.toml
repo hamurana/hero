@@ -79,7 +79,7 @@ fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384",
   layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
   showBreadcrumbs = true
   showDraftLabel = true
-  showEdit = true
+  showEdit = false
   editURL = "https://github.com/hamurana/hero/tree/main/content" # "Edit" links on articles point at your repo
   editAppendPath = true
   seriesOpened = false
@@ -92,11 +92,11 @@ fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384",
   relatedContentLimit = 9
   showTaxonomies = true
   showAuthorsBadges = false # needs data/authors/*.json profiles to be useful
-  showWordCount = false
+  showWordCount = true
   # Temporarily disabled — restore by uncommenting.
   #sharingLinks = [ "linkedin", "twitter", "bluesky", "reddit", "whatsapp", "telegram", "pinterest", "facebook", "email", "line"]
   sharingLinks = false
-  showZenMode = true
+  showZenMode = false
 
 [list]
   showHero = true

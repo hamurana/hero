@@ -26,7 +26,7 @@ title = "NCW"
 [params.author]
   name = "Neo Wang"
   headline = "Welcome to my corner of the web"
-  bio = "Writing about things I build and learn."
+  bio = "Writing about things that intrigue me."
   # Avatar shown on the homepage overlay — add assets/img/avatar.jpg and uncomment:
   #image = "img/avatar.jpg"
   links = [
