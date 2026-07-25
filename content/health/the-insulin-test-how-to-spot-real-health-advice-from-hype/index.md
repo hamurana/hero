@@ -9,7 +9,7 @@ sources:
   - 12-05-2026-6 — https://www.youtube.com/watch?v=V-SVLLYmmlQ
   - 14-05-2026-1 — https://www.youtube.com/watch?v=6F8H2GT7j6U
   - 15-05-2026-1 — https://www.youtube.com/watch?v=Bm8fq6DBkZo
-showTableOfContents: false
+showTableOfContents: true
 heroStyle: "background"
 ---
 
@@ -17,13 +17,13 @@ Your fasting glucose can look perfect on a blood test while insulin has been qui
 
 Here's how that filter works, and what it says about six months' worth of health advice run through it.
 
-### Your blood sugar isn't the problem. Insulin is.
+## Your blood sugar isn't the problem. Insulin is.
 
 A glucose spike after a meal is normal. The problem is what happens every time your pancreas answers that spike with insulin, over and over, for years. Cells exposed to repeated insulin surges eventually stop responding properly — insulin resistance — and it is a genuinely silent process. Standard blood tests measure glucose, not the insulin required to keep glucose normal, so someone can look metabolically fine on paper while insulin has been elevated in the background for over a decade.
 
 The damage isn't abstract. Chronically high glucose sticks to proteins in blood vessel walls (glycation), stiffening them and raising blood pressure. At the same time, insulin resistance degrades the endothelium — the vessel lining that produces nitric oxide to keep arteries flexible — years before any dramatic cardiac event. That's the mechanism behind the "silent" early signs of heart disease: a resting heart rate creeping from 65 to 75 bpm, swollen ankles by evening, getting winded on one flight of stairs. None of it looks like a insulin problem. All of it is.
 
-### The cheapest lever in medicine: walking after you eat
+## The cheapest lever in medicine: walking after you eat
 
 If insulin exposure is the target, the single highest-leverage move is also the cheapest: walk after you eat. In a randomised crossover trial, a 10-minute walk after each meal cut post-meal glucose by 12% compared with a single 30-minute walk at any other time of day — and the effect was strongest after dinner, where glucose exposure dropped 22% ([Reynolds et al., 2016](https://pmc.ncbi.nlm.nih.gov/articles/PMC7112182)).
 
@@ -31,7 +31,7 @@ The mechanism is worth knowing because it explains why squats or housework work 
 
 Frequency beats duration here. Three short movement bouts spread across the day outperform one long gym session followed by hours of sitting, because each bout independently blunts a glucose spike before it becomes an insulin spike.
 
-### The other habits doing the same job
+## The other habits doing the same job
 
 Post-meal movement isn't the only free lever on this axis — it's just the most direct one. A few others worth naming specifically:
 
@@ -42,19 +42,19 @@ Post-meal movement isn't the only free lever on this axis — it's just the most
 
 Each of these costs nothing and targets the same dial. That's what makes the next finding land differently: the vascular damage this whole system causes isn't necessarily permanent.
 
-### Fixing the vessels once they're damaged: exercise reverses it in weeks
+## Fixing the vessels once they're damaged: exercise reverses it in weeks
 
 An endothelium that's already stiffened from years of insulin exposure isn't a life sentence. Meta-analyses of aerobic exercise interventions show measurable improvements in flow-mediated dilation — a direct marker of endothelial and nitric oxide function — after as little as 8 weeks of vigorous aerobic training in middle-aged and older adults, with the largest effects at 10–12 weeks of consistent sessions ([exercise-endothelial function meta-analysis, 2022](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8814456)). Repeated bouts of exercise raise shear stress on artery walls, which upregulates nitric oxide production and reduces the oxidative stress that degrades it.
 
 That's the biological basis for the claim that vessel health can start recovering within weeks of adding regular aerobic activity — not years. The window to reverse this damage is wider than most people assume, provided the same silent process gets interrupted.
 
-### Sleep isn't a separate problem — it's the same axis
+## Sleep isn't a separate problem — it's the same axis
 
 It's tempting to file sleep under a different category from diet and movement. The data doesn't support that separation. In a controlled study, six nights of sleep restricted to 4 hours produced measurably lower glucose tolerance than six nights of 12-hour recovery sleep in the same participants ([Spiegel, Leproult & Van Cauter, 1999](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(99)01376-8/abstract)). Insufficient sleep isn't just tiring — it directly degrades the same insulin sensitivity that post-meal walks and fasting windows are working to protect, which is why chronically short sleep independently raises cardiovascular risk regardless of diet.
 
 That makes fixing sleep mechanics a legitimate part of this system, not a wellness afterthought. One of the more specific interventions worth knowing: glycine, an amino acid, lowers core body temperature through NMDA receptor activity in the brain's circadian control center, and human trials found that 3g taken before bed improved subjective sleep quality and reduced next-day fatigue — worth noting since some popular recipes call for considerably more (10g) than the dose actually tested ([Bannai & Kawai, 2012](https://www.jstage.jst.go.jp/article/jphs/118/2/118_11R04FM/_article)). Chamomile's apigenin content plausibly adds a complementary GABA-receptor effect, though the specific three-ingredient combination as a stack hasn't itself been through a controlled trial — treat it as a reasonable bet built from individually-tested parts, not a proven protocol.
 
-### Not every supplement is noise: the insulin test applied
+## Not every supplement is noise: the insulin test applied
 
 This is where the filter earns its keep. Two supplements showed up in this batch of videos with very different verdicts, and the difference tracks exactly with whether they touch the insulin/metabolic axis.
 
@@ -64,7 +64,7 @@ This is where the filter earns its keep. Two supplements showed up in this batch
 
 Same industry, same "should I take a pill" question, opposite answers — because one candidate touches the mechanism that's actually driving the damage, and the other doesn't.
 
-### The takeaway
+## The takeaway
 
 Insulin resistance is the quiet thread connecting muscle loss, arterial stiffening, and disrupted sleep, and it builds for years before a standard blood test notices. The good news is that the highest-leverage fixes are free, and the filter for everything else is simple: does this claim move insulin and metabolic function, or not?
 
@@ -77,7 +77,7 @@ Insulin resistance is the quiet thread connecting muscle loss, arterial stiffeni
 
 None of this requires a subscription, a device, or a doctor's note — just redirecting effort from the pill aisle to the parts of the system that were driving the damage all along.
 
-### Sources & further reading
+## Sources & further reading
 
 - Reynolds, A. N., et al. (2016). [Advice to walk after meals is more effective for lowering postprandial glycaemia than advice that does not specify timing](https://pmc.ncbi.nlm.nih.gov/articles/PMC7112182). *Diabetologia*, 59(12), 2572–2578.
 - Richter, E. A., & Hargreaves, M. (2013). [Exercise, GLUT4, and Skeletal Muscle Glucose Uptake](https://journals.physiology.org/doi/full/10.1152/physrev.00038.2012). *Physiological Reviews*.

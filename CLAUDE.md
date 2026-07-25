@@ -62,6 +62,24 @@ Hugo config is split across `config/_default/` (commented inline):
 Per-page front matter overrides any `[article]`/`[list]` param (see
 `content/about.md` for an example).
 
+## Table of Contents
+
+`showTableOfContents = true` under `[article]` in `params.toml` turns the ToC
+on for all posts by default; override per-post with `showTableOfContents:
+false/true` in front matter. `smartTOC = true` (also in `params.toml`) enables
+scroll-spy active-heading highlighting via the theme's own JS — no extra work
+needed.
+
+`markup.toml` sets `[tableOfContents] startLevel = 2, endLevel = 4`. **Post
+headings must start at `##` (H2)**, not `###` — if the first heading is below
+`startLevel`, Goldmark wraps the whole list in an extra empty `<li>`, breaking
+the ToC's indentation. `##` for top-level sections, `###` for subsections.
+
+`assets/css/custom.css` carries ToC-specific styling (leading `▸` marker per
+link, hover/active-state color, monospace font) as a working example of the
+override pattern — extend those rules rather than duplicating the `.toc`
+selectors.
+
 ## Deployment
 
 `.github/workflows/gh-pages.yml` builds and deploys on push to `main` using
@@ -86,3 +104,10 @@ get the right baseURL automatically.
 - Blowfish resolves images from `assets/` (theme or site), not `static/` —
   e.g. `defaultBackgroundImage = "/img/background.svg"` resolves to
   `themes/blowfish/assets/img/background.svg`.
+- In Claude Code's sandboxed Bash tool, `hugo server` binds inside the
+  sandbox's own network namespace — it is **not** reachable from the actual
+  GUI browser (e.g. opening `localhost:1313` in Safari fails to connect).
+  Visual/UI verification can't rely on taking a screenshot of a locally
+  launched browser; instead check rendered output via `curl`/`grep` on the
+  HTML and compiled CSS bundle in `public/`, or ask the user for a
+  screenshot.

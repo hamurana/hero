@@ -14,3 +14,40 @@
  *
  * Full list of variables: themes/blowfish/assets/css/schemes/blowfish.css
  * =========================================================================== */
+
+/* Table of Contents: distinct system-monospace font, hover feedback, and a
+   leading marker on each link (the theme's .toc li { list-style: none }
+   removes native bullets). No web font: keeps the ToC feeling like an index
+   without adding an external request. */
+.toc {
+  font-family: ui-monospace, "SF Mono", "Menlo", "Cascadia Code", "Consolas", monospace;
+  font-size: 0.9em;
+}
+
+.toc li > a {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.5em;
+}
+
+.toc li > a::before {
+  content: "▸";
+  color: rgb(var(--color-primary-600));
+  font-size: 0.7em;
+}
+
+.toc a:hover {
+  color: rgb(var(--color-primary-600));
+}
+
+.toc a.active {
+  text-decoration-line: none;
+}
+
+html.dark .toc li > a::before {
+  color: rgb(var(--color-primary-400));
+}
+
+html.dark .toc a:hover {
+  color: rgb(var(--color-primary-400));
+}
