@@ -1,0 +1,55 @@
+{{/* Custom section page: aggregates every post from all mainSections
+  (health, habit, charisma, investment, style) in one chronological,
+  paginated list — the homepage "Show More" button points here.
+  Classes are reused verbatim from themes/blowfish/layouts/_default/list.html
+  and term.html, which already use them, so they're guaranteed to be in the
+  theme's precompiled CSS bundle (see CLAUDE.md "Known quirks" on why new,
+  unused-elsewhere Tailwind classes silently do nothing). */}}
+{{ define "main" }}
+  {{ .Scratch.Set "scope" "list" }}
+
+  <header>
+    <h1 class="mt-5 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+      {{ .Title | emojify }}
+    </h1>
+    {{ with .Description }}
+      <div class="mt-1 mb-2 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+        {{ . }}
+      </div>
+    {{ end }}
+  </header>
+
+  {{ $allPosts := where site.RegularPages "Type" "in" site.Params.mainSections }}
+
+  {{ if gt (len $allPosts) 0 }}
+    {{/* Paginate at the year-group level (same unit the theme's own
+      list.html uses for its groupByYear option), then sub-group each
+      year's pages by month. Both GroupByDate calls sort newest-first
+      by the underlying page date, not the formatted string key. */}}
+    {{ $yearGroups := $allPosts.GroupByDate "2006" }}
+    {{ $paginated := .Paginate $yearGroups }}
+    {{ range $paginated.PageGroups }}
+      <h2 class="mt-12 text-2xl font-bold text-neutral-700 first:mt-8 dark:text-neutral-300">
+        {{ .Key }}
+      </h2>
+      {{ range .Pages.GroupByDate "January" }}
+        <h3 class="mt-6 mb-3 text-xl font-semibold text-neutral-600 dark:text-neutral-400">
+          {{ .Key }}
+        </h3>
+        <section class="w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3 mt-4">
+          {{ range .Pages }}
+            {{ partial "article-link/card.html" . }}
+          {{ end }}
+        </section>
+      {{ end }}
+    {{ end }}
+  {{ else }}
+    <section class="mt-10 prose dark:prose-invert">
+      <p class="py-8 border-t">
+        <em>{{ i18n "list.no_articles" | emojify }}</em>
+      </p>
+    </section>
+  {{ end }}
+
+  {{ partial "pagination.html" . }}
+{{ end }}

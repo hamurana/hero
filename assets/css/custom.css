@@ -51,3 +51,9 @@ html.dark .toc li > a::before {
 html.dark .toc a:hover {
   color: rgb(var(--color-primary-400));
 }
+
+/* Article cards: theme default is margin-top: 0.25rem (mt-1) above the
+   summary excerpt. Add one text line's worth (~1.25rem) on top of that. */
+.article-link__summary {
+  margin-top: 1.5rem;
+}

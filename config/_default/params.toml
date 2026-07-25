@@ -16,7 +16,7 @@ enableStructuredBreadcrumbs = true
 
 replyByEmail = false
 
-mainSections = ["health"] # sections whose articles feed "recent" lists on the homepage
+mainSections = ["health", "habit", "charisma", "investment", "style"] # sections whose articles feed "recent" lists on the homepage
 # robots = ""
 
 disableImageOptimization = false
@@ -59,7 +59,7 @@ fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384",
   showRecent = true
   showRecentItems = 6
   showMoreLink = true
-  showMoreLinkDest = "/health/"
+  showMoreLinkDest = "/posts/" # all posts, across all mainSections, chronological
   cardView = true
   cardViewScreenWidth = false
   layoutBackgroundBlur = true # only used when layout equals background
@@ -104,7 +104,7 @@ fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384",
   layoutBackgroundBlur = true # only used when heroStyle equals background
   layoutBackgroundHeaderSpace = false
   showBreadcrumbs = false
-  showSummary = false
+  showSummary = true
   showViews = false
   showLikes = false
   showTableOfContents = true

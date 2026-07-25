@@ -1,6 +1,7 @@
 ---
 title: "The Insulin Test: How to Spot Real Health Advice From Hype"
 topic: Health
+categories: ["Health"]
 date: 2026-07-24
 sources:
   - 11-05-2026-1 — https://www.youtube.com/watch?v=49NYKRdWKJs

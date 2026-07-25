@@ -80,6 +80,38 @@ link, hover/active-state color, monospace font) as a working example of the
 override pattern — extend those rules rather than duplicating the `.toc`
 selectors.
 
+## Content architecture
+
+- `mainSections` in `params.toml` lists every top-level content section
+  (`health`, `habit`, `charisma`, `investment`, `style`) — this drives both
+  the homepage's "recent posts" grid and the `/posts/` page below. Add a new
+  top-level section directory to this list or its posts won't appear in
+  either place (they're still published and reachable directly, just not
+  aggregated).
+- `/posts/` (`content/posts/_index.md` + `layouts/posts/list.html`) is a
+  **custom aggregator page**, not a normal Hugo section — `content/posts/`
+  has no actual post files, just a title/description. The template queries
+  `where site.RegularPages "Type" "in" site.Params.mainSections` directly
+  and groups the result by year then month (`GroupByDate "2006"` then
+  `GroupByDate "January"`, both newest-first), paginating at the year-group
+  level the same way the theme's own `list.html` does for `groupByYear`.
+  The homepage's "Show More" button (`homepage.showMoreLinkDest`) points
+  here so it surfaces posts from every section, not just one.
+- `layouts/partials/article-link/card.html` overrides the theme's card
+  partial (used by the homepage grid, list/term pages in card view, and
+  `/posts/`) to move the taxonomy badge above the title. Because the
+  theme's `article-meta/basic.html` renders date/reading-time and taxonomy
+  together in one call, the taxonomy block is duplicated inline here
+  (copied from that partial) and the date/reading-time line is
+  re-implemented separately, rather than calling `article-meta/basic.html`
+  twice and getting the taxonomy badge rendered in both places.
+- Front matter has two different-looking "topic" fields on posts — they are
+  **not** the same thing: `topic:` is a plain string, purely informational,
+  not read by any template. `categories: ["Health"]` is the actual Hugo
+  taxonomy (`[taxonomies] category = "categories"` in `hugo.toml`) that
+  `showTaxonomies = true` needs to render a badge on cards. Set `categories`
+  (not just `topic`) for a post's badge to actually show up.
+
 ## Deployment
 
 `.github/workflows/gh-pages.yml` builds and deploys on push to `main` using
@@ -111,3 +143,23 @@ get the right baseURL automatically.
   launched browser; instead check rendered output via `curl`/`grep` on the
   HTML and compiled CSS bundle in `public/`, or ask the user for a
   screenshot.
+- **`themes/blowfish/assets/css/compiled/main.css` is a static, pre-built
+  file committed to the theme submodule — Hugo does not run Tailwind at
+  build time.** `head.html` just does `resources.Get "css/compiled/main.css"`
+  (a plain file read, not a `css.TailwindCSS`/PostCSS pipeline). This means
+  any Tailwind utility class used in a *site-level* template override
+  (`layouts/`) only has real CSS behind it if that exact class string
+  already happens to appear somewhere in the theme's own `themes/blowfish/
+  layouts/`. A novel class like `hover:shadow-lg`, `rounded-2xl`-adjacent
+  combos not used elsewhere, `mt-auto`, or a custom arbitrary-variant
+  breakpoint (`[@media(min-width:1020px)]:...`) will silently produce no
+  rule at all — no build error, no console warning, just missing styling
+  that can look like a badly broken layout. This was the root cause of
+  multiple "page is completely broken" reports before it was diagnosed.
+  **Before using a new Tailwind class in a template override, grep it
+  against the compiled bundle in `public/css/main.bundle.min.*.css` (or
+  `themes/blowfish/assets/css/compiled/main.css` directly) to confirm it
+  exists.** When in doubt, or when introducing genuinely new styling
+  (custom breakpoints, hover effects, grid layouts not used elsewhere),
+  write plain CSS in `assets/css/custom.css` instead — it's concatenated
+  verbatim (not Tailwind-purged), so it always works.
