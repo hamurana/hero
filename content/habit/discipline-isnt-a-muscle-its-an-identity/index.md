@@ -9,10 +9,9 @@ sources:
   - 13-05-2026-3 — https://www.youtube.com/watch?v=X3vRK2P9lSU
   - 13-05-2026-4 — https://www.youtube.com/watch?v=SseUzcEN9U0
 showTableOfContents: true
-heroStyle: "background"
+heroStyle: "big"
+imagePosition: "center top"
 ---
-
-# Discipline Isn't a Muscle. It's an Identity.
 
 Most advice on self-control tells you to grit your teeth and push harder. That advice is built on a theory of willpower that collapsed under replication. The real fix for discipline has nothing to do with force, and everything to do with who you decide you are, what your room looks like, and how kindly you talk to yourself when you fail.
 

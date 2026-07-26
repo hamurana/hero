@@ -11,7 +11,8 @@ sources:
   - 14-05-2026-1 — https://www.youtube.com/watch?v=6F8H2GT7j6U
   - 15-05-2026-1 — https://www.youtube.com/watch?v=Bm8fq6DBkZo
 showTableOfContents: true
-heroStyle: "background"
+heroStyle: "big"
+imagePosition: "center top"
 ---
 
 Your fasting glucose can look perfect on a blood test while insulin has been quietly damaging your blood vessels for ten to fifteen years. That gap — normal glucose, abnormal insulin — is why heart disease, muscle loss, and poor sleep all show up looking unrelated when they share one root cause. Once you see chronic insulin exposure as the shared variable, you also get a simple filter for every supplement claim you'll ever hear: does it move insulin and metabolic function, or is it just noise wearing a lab coat?
