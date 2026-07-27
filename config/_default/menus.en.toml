@@ -34,6 +34,12 @@
   pageRef = "about"
   weight = 60
 
+[[main]]
+  identifier = "rss"
+  pre = "rss"
+  url = "index.xml"
+  weight = 70
+
 # Icon-only link in the header, like blowfish.page's GitHub icon.
 # [[main]]
 #   identifier = "github"
