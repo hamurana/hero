@@ -1,4 +1,4 @@
 ---
 title: "Health"
-description: "All articles"
+description: "Evidence-based writing on metabolic health, insulin, and cutting through supplement hype — grounded in research, not trends."
 ---

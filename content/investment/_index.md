@@ -1,4 +1,4 @@
 ---
 title: "Investment"
-description: "All articles"
+description: "Notes on investing and long-term financial decision-making."
 ---

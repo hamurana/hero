@@ -1,6 +1,6 @@
 ---
 title: "About"
-description: "About this site"
+description: "How this site is built — Hugo, the Blowfish theme, and GitHub Pages deployment."
 showDate: false
 showAuthor: false
 showReadingTime: false

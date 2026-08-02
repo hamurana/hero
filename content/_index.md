@@ -1,7 +1,6 @@
 ---
-title: "Hero"
-description: "Welcome to Hero"
+title: "NCW"
+description: "Neo Wang's personal blog — research-backed writing on health, habits, charisma, investing, and style."
 ---
 
-Welcome! This text appears below the profile overlay on the homepage.
-Edit `content/_index.md` to change it.
+Research-backed writing on health, habits, charisma, investing, and style.

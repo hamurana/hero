@@ -1,7 +1,9 @@
 ---
 title: "Discipline Isn't a Muscle. It's an Identity."
+description: "The ego-depletion model of willpower failed to replicate across 2,141 participants. What actually drives discipline: identity, environment design, and self-compassion."
 topic: Habit
 categories: ["Habit"]
+tags: ["habits", "discipline", "willpower", "psychology"]
 date: 2026-07-21
 sources:
   - 13-05-2026-1 — https://www.youtube.com/watch?v=-T8w4xiPS-E

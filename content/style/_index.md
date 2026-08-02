@@ -1,4 +1,4 @@
 ---
 title: "Style"
-description: "All articles"
+description: "Notes on personal style — what to wear, buy, and skip."
 ---

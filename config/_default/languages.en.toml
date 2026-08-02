@@ -17,7 +17,13 @@ title = "NCW"
   isoCode = "en"
   rtl = false
   dateFormat = "2 January 2006"
-  description = "A personal site built with Hugo and the Blowfish theme."
+  # Fallback meta description (and WebSite JSON-LD description) for any page
+  # that doesn't set its own `description` — was the generic
+  # "A personal site built with Hugo and the Blowfish theme.", which is what
+  # every post without a front-matter `description:` was actually shipping
+  # as its <meta name="description">.
+  description = "Neo Wang's personal blog — research-backed writing on health, habits, charisma, investing, and style."
+  keywords = ["health", "habits", "charisma", "investing", "style", "self-improvement", "personal blog"]
 
   # blowfish.page shows a logo image instead of the title text in the header.
   # To do the same, put your logo in assets/img/ and uncomment:

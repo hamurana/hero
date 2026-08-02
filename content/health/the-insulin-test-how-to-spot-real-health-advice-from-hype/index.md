@@ -1,7 +1,9 @@
 ---
 title: "The Insulin Test: How to Spot Real Health Advice From Hype"
+description: "Normal glucose can hide a decade of insulin damage. A simple filter — does it move insulin and metabolic function, or is it noise? — for testing health advice against evidence."
 topic: Health
 categories: ["Health"]
+tags: ["health", "insulin", "metabolic health", "nutrition"]
 date: 2026-07-24
 sources:
   - 11-05-2026-1 — https://www.youtube.com/watch?v=49NYKRdWKJs
@@ -11,7 +13,6 @@ sources:
   - 14-05-2026-1 — https://www.youtube.com/watch?v=6F8H2GT7j6U
   - 15-05-2026-1 — https://www.youtube.com/watch?v=Bm8fq6DBkZo
 showTableOfContents: true
-heroStyle: "big"
 imagePosition: "center top"
 ---
 

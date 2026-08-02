@@ -1,7 +1,9 @@
 ---
 title: "Charisma Isn't Charm — It's Not Needing Anything From the Room"
+description: "Charisma isn't wit, warmth, or looks — it's not needing the room's approval. Five research-backed habits that signal genuine, chosen interest instead of neediness."
 topic: Charisma
 categories: ["Charisma"]
+tags: ["charisma", "social skills", "confidence", "psychology"]
 date: 2026-07-08
 sources:
   - 12-05-2026-2 — https://www.youtube.com/watch?v=c4LWoXVgZ4s

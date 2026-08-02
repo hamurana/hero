@@ -26,7 +26,12 @@ disableTextInHeader = false
 
 defaultBackgroundImage = "/img/background.svg"
 defaultFeaturedImage = "/img/featured.svg"
-defaultSocialImage = "/img/blowfish_banner.png"
+# Was "/img/blowfish_banner.png" (the theme's own mascot banner) — since no
+# site-level assets/img override existed, every og:image/twitter:image on the
+# whole site was Blowfish's branding instead of this site's. Replaced with a
+# generated placeholder at assets/img/social-card.png (matches the site's
+# dark colorScheme); swap for a real design whenever one exists.
+defaultSocialImage = "/img/social-card.png"
 hotlinkFeatureImage = false
 # imagePosition = "50% 50%"
 
