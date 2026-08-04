@@ -20,7 +20,8 @@ buildFuture = false
 
 enableEmoji = true
 
-# googleAnalytics = ""  # (removed: the exampleSite value was the Blowfish project's own GA property)
+[services.googleAnalytics]
+  id = "G-MMKDCMH7TW"
 
 [pagination]
   pagerSize = 12 # posts per page on list pages

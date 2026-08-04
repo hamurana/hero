@@ -36,9 +36,10 @@ Deliberate deviations from blowfish.page (all commented in params.toml):
 - Article dates shown, lists sorted by date and grouped by year (blog, not docs)
 - `pagerSize = 12` instead of 102
 - View counters off (`showViews = false`) — need a user-owned Firebase project
-- Buy-me-a-coffee widget disabled, Google Analytics and Firebase IDs removed:
-  the exampleSite ships the theme author's personal account IDs — **never copy
-  those back in**
+- Buy-me-a-coffee widget disabled, Firebase ID removed: the exampleSite ships
+  the theme author's personal account IDs — **never copy those back in**
+- Google Analytics is enabled with Neo's own property (`[services.googleAnalytics]`
+  in `hugo.toml`, ID `G-MMKDCMH7TW`) — this is Neo's ID, not the exampleSite's
 
 Homepage uses the built-in `background` layout (fullscreen animated
 `background.svg` from theme assets with profile overlay) — blowfish.page's
