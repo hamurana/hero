@@ -4,22 +4,23 @@ topic: Charisma
 date: 2026-07-08
 ---
 
-# Want It, Don't Need It
-
+{{<lead>}}
 Being funny and being likable get taught as two separate skill sets. Timing and wordplay over here, warmth and eye contact over there. I don't think they're separate at all. I think they're the same thing wearing two outfits.
+{{</lead>}}
 
 ### The thing that ruins both
 
-Try too hard to land a joke and it dies. Try too hard to be liked and it reads as needy. Same failure, two costumes. In both cases, the room can feel how much the outcome matters to you, and that feeling is what kills the thing you were going for.
+`Try too hard` to land a joke and it dies. Try too hard to be liked and it reads as needy. Same failure, two costumes. In both cases, the room can feel how much the outcome matters to you, and that feeling is what kills the thing you were going for. 
 
-The fix isn't a better joke or a better line. It's caring less about whether it lands.
+> [!IMPORTANT]
+> The fix isn't a better joke or a better line. It's caring less about whether it lands.
 
 ### What that looks like for humor
 
 - **Stop filtering yourself.** Most people kill their own jokes before they say them, out of fear of bombing. But the willingness to sometimes bomb is exactly what lets someone get quick and funny over time. You can't build the skill without spending some reps failing at it.
 - **Go in to have fun, not to be liked.** Small shift, big difference. One is playing. The other is auditioning.
 - **Be specific, not vague.** "I don't like the news" isn't funny. "The news is like pouring hot lemon juice in your eyeballs" is. Vague statements don't give anyone a picture to laugh at — a vivid, ridiculous image does.
-- **Use surprise.** Set up like you're about to say something sincere, then undercut it. Or get asked an obvious question and give the opposite answer, or the most absurd answer that could still technically apply. A one-second pause before the punchline helps — it gives people just enough time to guess wrong.
+- **Use surprise.** Set up like you're about to say something `sincere`, then undercut it. Or get asked an obvious question and give the `opposite` answer, or the most absurd answer that could still technically apply. A one-second pause before the punchline helps — it gives people just enough time to guess wrong.
 - **Tease yourself too.** Making fun of only other people can read as mean. Poking fun at yourself, especially about something that isn't a real insecurity, signals you're playing, not attacking.
 
 ### What the same idea looks like for likability
@@ -36,9 +37,10 @@ Notice the pattern: filtering less, caring less about the outcome, staying calm 
 
 That also explains why trying to memorize "funny lines" or "conversation starters" only gets you so far. The lines are just examples of the underlying stance — someone who wants a good outcome but doesn't need one, and so isn't bracing for it to fail.
 
-### Small things to try
 
-- Say the joke you'd normally filter out. Let it land or not — either way, notice you survived it.
-- Swap one vague complaint today for a specific, slightly ridiculous image.
-- Next time something goes wrong in front of people, name it out loud and move on instead of hoping no one noticed.
-- Give a compliment to someone in the room who isn't the "important" person to impress.
+ ### Small things to try
+> [!TODO]
+> - Say the joke you'd normally filter out. Let it land or not — either way, notice you survived it.
+> - Swap one vague complaint today for a specific, slightly ridiculous image.
+> - Next time something goes wrong in front of people, name it out loud and move on instead of hoping no one noticed.
+> - Give a compliment to someone in the room who isn't the "important" person to impress.

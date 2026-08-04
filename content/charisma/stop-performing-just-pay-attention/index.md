@@ -4,13 +4,14 @@ topic: Charisma
 date: 2026-07-05
 ---
 
-# Stop Performing, Just Pay Attention
-
+{{<lead>}}
 Three completely different situations — a deep one-on-one conversation, casual small talk, and staying calm under pressure — and they all seem to come down to the same small move. Stop trying to be impressive. Just be there.
+{{</lead>}}
 
 ### The temptation in all three
 
-In a deep conversation, the temptation is to prove you're insightful or helpful — jumping in with advice, finishing people's sentences, steering toward your own story. In small talk, the temptation is to be witty or interesting, which usually just makes the exchange feel forced. Under pressure, the temptation is to react — defend yourself, raise your voice, show you're not intimidated.
+> [!TIP]
+> In a deep conversation, the temptation is to prove you're insightful or helpful — jumping in with advice, finishing people's sentences, steering toward your own story. In small talk, the temptation is to be witty or interesting, which usually just makes the exchange feel forced. Under pressure, the temptation is to react — defend yourself, raise your voice, show you're not intimidated.
 
 All three temptations come from the same place: worrying about how you're coming across, instead of paying attention to what's actually happening in front of you.
 
@@ -29,7 +30,8 @@ All three temptations come from the same place: worrying about how you're coming
 - **Ask "why" instead of "what."** It surfaces what someone cares about, which gives you something real to talk about next.
 - **Laugh when something's actually funny, and repeat someone's last few words back to them once in a while.** Both are just small, honest signs that you're actually listening, not performing your side of the exchange.
 
-The video's own conclusion on this one is worth keeping as-is: good small talk isn't about being witty. It's about creating the conditions for the other person to enjoy talking. That's the whole throughline in one sentence.
+> [!TIP]
+> Good small talk isn't about being witty. It's about creating the conditions for the other person to enjoy talking. That's the whole throughline in one sentence.
 
 ### What it looks like under pressure
 
@@ -40,10 +42,10 @@ The video's own conclusion on this one is worth keeping as-is: good small talk i
 
 ### The same move, three settings
 
-Deep listening, easy small talk, and calm under pressure all ask for the same thing underneath: stop managing your own image for a minute, and actually attend to what's in front of you — the person's words, the thread of the conversation, the situation as it actually is rather than how threatening it feels.
+`Deep listening`, `easy small talk`, and `calm under pressure` all ask for the same thing underneath: stop managing your own image for a minute, and actually attend to what's in front of you — the person's words, the thread of the conversation, the situation as it actually is rather than how threatening it feels.
 
-A few small things to try:
-
-- In your next real conversation, go three exchanges without offering your own opinion — just reflect back what the other person said.
-- In small talk, swap one "what do you do" for a "why" version of the same question.
-- Next time you feel provoked, slow your speech down on purpose before responding at all.
+> [!TODO]
+> A few small things to try:
+> - In your next real conversation, go three exchanges without offering your own opinion — just reflect back what the other person said.
+> - In small talk, swap one "what do you do" for a "why" version of the same question.
+> - Next time you feel provoked, slow your speech down on purpose before responding at all.
