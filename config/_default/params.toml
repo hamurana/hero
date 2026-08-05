@@ -72,8 +72,8 @@ fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384",
 
 [article]
   showDate = true # blowfish.page hides dates (docs site); a blog wants them
-  showViews = false # blowfish.page has true, but it needs your own [firebase] config below
-  showLikes = false
+  showViews = true
+  showLikes = true
   showDateOnlyInArticle = false
   showDateUpdated = false
   showAuthor = true
@@ -108,8 +108,8 @@ fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384",
   layoutBackgroundHeaderSpace = false
   showBreadcrumbs = false
   showSummary = true
-  showViews = false
-  showLikes = false
+  showViews = true
+  showLikes = true
   showTableOfContents = true
   showCards = true
   orderByWeight = false # docs order by weight; a blog orders by date
@@ -126,8 +126,8 @@ fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384",
   showHero = true
   heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   showBreadcrumbs = false
-  showViews = false
-  showLikes = false
+  showViews = true
+  showLikes = true
   showTableOfContents = true
   cardView = false
 
@@ -135,25 +135,25 @@ fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384",
   showHero = true
   heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   showBreadcrumbs = false
-  showViews = false
-  showLikes = false
+  showViews = true
+  showLikes = true
   showTableOfContents = true
   groupByYear = false
   cardView = true
   cardViewScreenWidth = false
 
-# Firebase powers the view/like counters on blowfish.page. The exampleSite
-# values belong to the Blowfish project's own Firebase account, so they are
-# removed here. To get counters, create your own (free) Firebase project and
-# fill these in: https://blowfish.page/docs/firebase-views/
+# Firebase powers the view/like counters on blowfish.page. This is Neo's own
+# Firebase project (see https://blowfish.page/docs/firebase-views/ for setup:
+# Firestore in production mode + the views/likes security rules + anonymous
+# auth enabled).
 [firebase]
-  # apiKey = ""
-  # authDomain = ""
-  # projectId = ""
-  # storageBucket = ""
-  # messagingSenderId = ""
-  # appId = ""
-  # measurementId = ""
+  apiKey = "AIzaSyCFVVwfLGIi5gLoF5itBeEasmgqYbHzpjA"
+  authDomain = "ncw-website-34734.firebaseapp.com"
+  projectId = "ncw-website-34734"
+  storageBucket = "ncw-website-34734.firebasestorage.app"
+  messagingSenderId = "749568050582"
+  appId = "1:749568050582:web:256ab9cd8fc0879ed909b7"
+  measurementId = "G-32LK69BL18"
 
 [fathomAnalytics]
   # site = "ABC12345"
