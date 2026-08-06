@@ -27,15 +27,14 @@ title = "NCW"
 
   # blowfish.page shows a logo image instead of the title text in the header.
   # To do the same, put your logo in assets/img/ and uncomment:
-  #logo = "img/logo.png"
+  # logo = "img/avatar.jpg"
 
 [params.author]
-  name = "Neo Wang"
+  name = "Neo W."
   headline = "Welcome to my corner of the web"
   bio = "Writing about things that intrigue me."
   # Avatar shown on the homepage overlay — add assets/img/avatar.jpg and uncomment:
-  #image = "img/avatar.jpg"
+  image = "img/avatar.jpg"
   links = [
-    { github = "https://github.com/hamurana" },
-    { email = "mailto:neo.wang@me.com" },
+    { email = "mailto:neo.wang@me.com" }
   ]

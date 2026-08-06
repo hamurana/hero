@@ -59,9 +59,9 @@ fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384",
   # fullscreen animated background (defaultBackgroundImage above) with your
   # profile overlaid, recent posts below. (blowfish.page itself uses "custom"
   # only to add its layout-switcher demo and sponsor sections.)
-  layout = "background" # valid options: page, profile, hero, card, background, custom
+  layout = "profile" # valid options: page, profile, hero, card, background, custom
   # homepageImage = "/img/iceland.jpg" # used in: hero, and card
-  showRecent = true
+  showRecent = false
   showRecentItems = 6
   showMoreLink = true
   showMoreLinkDest = "/posts/" # all posts, across all mainSections, chronological
@@ -99,7 +99,7 @@ fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384",
   showAuthorsBadges = false # needs data/authors/*.json profiles to be useful
   showWordCount = true
   sharingLinks = [ "linkedin", "twitter", "bluesky", "reddit", "whatsapp", "telegram", "pinterest", "facebook", "email", "line"]
-  showZenMode = false
+  showZenMode = true
 
 [list]
   showHero = true
@@ -108,8 +108,8 @@ fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384",
   layoutBackgroundHeaderSpace = false
   showBreadcrumbs = false
   showSummary = true
-  showViews = true
-  showLikes = true
+  showViews = false
+  showLikes = false
   showTableOfContents = true
   showCards = true
   orderByWeight = false # docs order by weight; a blog orders by date

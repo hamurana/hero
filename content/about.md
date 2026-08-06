@@ -5,6 +5,8 @@ showDate: false
 showAuthor: false
 showReadingTime: false
 showTableOfContents: false
+showWordCount: false
+showZenMode: false
 ---
 
 This site is built with [Hugo](https://gohugo.io/) and the
