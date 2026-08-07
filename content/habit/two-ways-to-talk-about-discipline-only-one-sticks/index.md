@@ -2,6 +2,7 @@
 title: "Two Ways to Talk About Discipline (Only One Sticks)"
 topic: Habit
 date: 2026-07-29
+description: "There's a version of discipline that sounds like a locker-room speech. Stop negotiating with yourself. Push through the first thirty days. Raise your standards, seek out discomfort, speak only in absolutes. It's loud, it's stirring, and for about a week it works."
 ---
 
 {{<lead>}}

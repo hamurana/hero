@@ -19,8 +19,8 @@ replyByEmail = false
 mainSections = ["health", "habit", "charisma", "investment", "style"] # sections whose articles feed "recent" lists on the homepage
 # robots = ""
 
-disableImageOptimization = false
-disableImageOptimizationMD = false
+disableImageOptimization = true
+disableImageOptimizationMD = true
 disableTextInHeader = false
 # backgroundImageWidth = 1200
 
@@ -59,7 +59,7 @@ fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384",
   # fullscreen animated background (defaultBackgroundImage above) with your
   # profile overlaid, recent posts below. (blowfish.page itself uses "custom"
   # only to add its layout-switcher demo and sponsor sections.)
-  layout = "profile" # valid options: page, profile, hero, card, background, custom
+  layout = "hero" # valid options: page, profile, hero, card, background, custom
   # homepageImage = "/img/iceland.jpg" # used in: hero, and card
   showRecent = false
   showRecentItems = 6

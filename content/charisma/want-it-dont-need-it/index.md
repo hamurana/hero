@@ -2,6 +2,7 @@
 title: "Want It, Don't Need It"
 topic: Charisma
 date: 2026-07-08
+description: "Being funny and being likable get taught as two separate skill sets. Timing and wordplay over here, warmth and eye contact over there. I don't think they're separate at all. I think they're the same thing wearing two outfits."
 ---
 
 {{<lead>}}

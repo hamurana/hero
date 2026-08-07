@@ -2,6 +2,7 @@
 title: "Discipline Isn't Willpower. It's Proof."
 topic: "Habit"
 date: 2026-07-19
+description: "I used to think discipline was just gritting your teeth harder than the next person. Lately I'm not so sure. It might actually be simpler than that — and a little kinder too."
 ---
 
 {{<lead>}}

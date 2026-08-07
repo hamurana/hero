@@ -7,7 +7,9 @@ showReadingTime: false
 showTableOfContents: false
 showWordCount: false
 showZenMode: false
+showHero: false
 ---
+![](img/avatar.jpg)
 
 This site is built with [Hugo](https://gohugo.io/) and the
 [Blowfish](https://blowfish.page/) theme, and deployed to GitHub Pages.

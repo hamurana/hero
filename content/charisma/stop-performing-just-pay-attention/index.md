@@ -2,6 +2,7 @@
 title: "Stop Performing, Just Pay Attention"
 topic: Charisma
 date: 2026-07-05
+description: "Three completely different situations — a deep one-on-one conversation, casual small talk, and staying calm under pressure — and they all seem to come down to the same small move. Stop trying to be impressive. Just be there."
 ---
 
 {{<lead>}}

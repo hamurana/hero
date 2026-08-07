@@ -2,6 +2,7 @@
 title: "Respect Isn't Loud"
 topic: Charisma
 date: 2026-07-02
+description: "Most advice about commanding a room points you toward being bigger — louder voice, bolder moves, faster comebacks. I think that gets it backwards. The people who actually earn respect in tense moments tend to slow everything down instead."
 ---
 
 {{<lead>}}
